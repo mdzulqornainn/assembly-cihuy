@@ -26,7 +26,7 @@ export default function Navbar() {
       `}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-xl">MyWebsite</h1>
+        <h1 className="font-bold text-xl">Assembly</h1>
 
         <ul className="flex gap-8 font-medium">
           <li>
@@ -36,14 +36,14 @@ export default function Navbar() {
           </li>
           <li>
             <a href="#about" className="hover:text-blue-500">
-              About
+              Profile
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#gallery" className="hover:text-blue-500">
               Gallery
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
