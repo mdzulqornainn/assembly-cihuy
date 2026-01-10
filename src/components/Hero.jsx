@@ -1,13 +1,13 @@
-import hero from '../assets/profile.jpg';
-import dirt from '../assets/dirt.svg';
-import cloud from '../assets/cloud.svg';
-import music from '../assets/music.svg';
-import camera from '../assets/camera.svg';
-import Button from './Button.jsx';
+import hero from "../assets/profile.jpg";
+import dirt from "../assets/dirt.svg";
+import cloud from "../assets/cloud.svg";
+import music from "../assets/music.svg";
+import camera from "../assets/camera.svg";
+import Button from "./Button.jsx";
+import Foto from "./ProfileCard.jsx";
 import { motion } from "framer-motion";
 
 export default function HeroCinematicResponsive() {
-
   const containerVariants = {
     hidden: {},
     visible: {
@@ -21,8 +21,7 @@ export default function HeroCinematicResponsive() {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden bg-gradient-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press">
-
+    <section className="relative h-screen overflow-hidden bg-linear-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press">
       {/* Dirt background floating subtle */}
       <motion.img
         src={dirt}
@@ -69,10 +68,13 @@ export default function HeroCinematicResponsive() {
           className="flex gap-3 md:gap-4 mt-2 flex-wrap justify-center"
         >
           <Button href="#gallery" text="Gallery" icon={camera} />
-          <Button href="#playlist" text="Playlist" icon={music} />
+          <Button
+            href="https://open.spotify.com/playlist/7BBQ3REvQUrRb9LFuCXSQN?si=efd4f8318fca4348"
+            text="Playlist"
+            icon={music}
+          />
         </motion.div>
       </motion.div>
-
     </section>
   );
 }

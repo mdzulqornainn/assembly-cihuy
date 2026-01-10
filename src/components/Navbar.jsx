@@ -30,17 +30,22 @@ export default function Navbar() {
 
         <ul className="flex gap-8 font-medium">
           <li>
-            <a href="#home" className="hover:text-blue-500">Home</a>
+            <a href="#home" className="hover:text-blue-500">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-blue-500">About</a>
+            <a href="#about" className="hover:text-blue-500">
+              About
+            </a>
           </li>
           <li>
-            <a href="#gallery" className="hover:text-blue-500">Gallery</a>
+            <a href="#gallery" className="hover:text-blue-500">
+              Gallery
+            </a>
           </li>
         </ul>
       </div>
     </nav>
   );
 }
-    
