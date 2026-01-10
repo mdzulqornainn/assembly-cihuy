@@ -18,9 +18,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`
-        fixed top-0 left-0 w-full z-50
-        transition-all duration-300
+      className={`font-press fixed top-0 left-0 w-full z-50 transition-all duration-300
         ${show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"}
         bg-white/80 backdrop-blur shadow
       `}
