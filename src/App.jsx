@@ -1,15 +1,16 @@
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import Hero from "./components/Hero.jsx";
-import Team from "./components/Team.jsx";
+import Home from "./pages/Home.jsx";
+import Profile from "./pages/Profile.jsx";
 
 function App() {
   return (
     <>
-      <Hero id="home" />
       <Navbar />
-      <Team />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </>
   );
 }

@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 
-export default function Button({ href, text, icon }) {
+export default function Button({ href, text, icon, target }) {
+  const rel = target === "_blank" ? "noreferrer" : undefined;
   return (
     <motion.a
       href={href}
-      target="_blank"
+      target={target}
+      rel={rel}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className="relative z-50 inline-flex items-center justify-center gap-2 h-12 max-w-50 px-6 rounded-3xl border-3 border-amber-400 text-white font-semibold hover:bg-white hover:text-amber-700 transition mb-1"
