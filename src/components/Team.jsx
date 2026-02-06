@@ -16,10 +16,13 @@ export default function Team() {
   };
 
   return (
-    <section id="members" className="max-w-6xl mx-auto px-4 py-16 font-press  ">
+    <section
+      id="members"
+      className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 font-press"
+    >
       {/* TITLE — Assembly Style */}
       <motion.h2
-        className="text-2xl font-bold text-center mb-10"
+        className="text-xl sm:text-2xl font-bold text-center mb-8 sm:mb-10"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -28,14 +31,7 @@ export default function Team() {
 
       {/* GRID */}
       <motion.div
-        className="
-          grid
-          grid-cols-2
-          sm:grid-cols-3
-          md:grid-cols-4
-          lg:grid-cols-6
-          gap-6 sm:gap-8
-        "
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-8"
         variants={container}
         initial="hidden"
         whileInView="visible"

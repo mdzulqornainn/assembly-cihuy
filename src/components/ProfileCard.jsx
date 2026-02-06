@@ -24,7 +24,7 @@ export default function ProfileCard({ name, img }) {
     >
       <svg
         viewBox="0 0 174.5 233.7"
-        className="w-32 h-44 sm:w-36 sm:h-48 md:w-40 md:h-52 drop-shadow-lg"
+        className="w-24 h-36 sm:w-32 sm:h-44 md:w-36 md:h-48 lg:w-40 lg:h-52 drop-shadow-lg"
       >
         <defs>
           {/* AREA FOTO (UNIK & AMAN) */}

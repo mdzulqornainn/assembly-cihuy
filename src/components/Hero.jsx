@@ -21,11 +21,11 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden bg-linear-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press">
+    <section className="relative min-h-[100svh] overflow-hidden bg-linear-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press px-4 sm:px-6">
       {/* Dirt background floating subtle */}
       <motion.img
         src={dirt}
-        className="absolute bottom-0 w-full z-0"
+        className="absolute bottom-0 w-[140%] sm:w-full z-0"
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
@@ -34,7 +34,7 @@ export default function Hero() {
       {/* clouds */}
       <motion.img
         src={cloud}
-        className="absolute top-0 mx-10 left-1/2 w-110 md:w-full z-10 pointer-events-none opacity-60 -translate-x-1/2"
+        className="absolute top-0 mx-6 left-1/2 w-[120%] sm:w-full z-10 pointer-events-none opacity-60 -translate-x-1/2"
         initial={{ opacity: 0.7, x: -50 }}
         animate={{ x: [-50, 10, -50] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -42,7 +42,7 @@ export default function Hero() {
 
       {/* Content staggered */}
       <motion.div
-        className="relative z-50 flex flex-col items-center px-4 md:px-0"
+        className="relative z-50 flex flex-col items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -50,13 +50,13 @@ export default function Hero() {
         {/* Hero Image */}
         <motion.img
           src={hero}
-          className="w-28 md:w-36 rounded-full mb-6 shadow-lg"
+          className="w-24 sm:w-28 md:w-36 rounded-full mb-6 shadow-lg"
           variants={itemVariants}
         />
 
         {/* Title */}
         <motion.h1
-          className="text-3xl md:text-4xl font-bold mb-4 text-center"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center"
           variants={itemVariants}
         >
           ASSEMBLY GROUP

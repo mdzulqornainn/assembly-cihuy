@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 
 export default function Profile() {
   return (
-    <section className="min-h-screen bg-slate-50 pt-24 pb-16">
+    <section className="min-h-screen bg-slate-50 pt-20 sm:pt-24 pb-12 sm:pb-16">
       <Navbar />
 
-      <div className="max-w-3xl mx-auto px-6 font-press">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 font-press">
         {/* LABEL */}
         <motion.p
-          className="text-sm uppercase tracking-[0.3em] text-slate-500"
+          className="text-xs sm:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] text-slate-500"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -19,7 +19,7 @@ export default function Profile() {
 
         {/* TITLE */}
         <motion.h1
-          className="mt-3 text-3xl md:text-4xl font-bold text-slate-900"
+          className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900"
           whileHover={{ x: 6 }}
           transition={{ type: "spring", stiffness: 200 }}
         >
@@ -28,7 +28,7 @@ export default function Profile() {
 
         {/* DESCRIPTION */}
         <motion.p
-          className="mt-4 text-base md:text-lg text-slate-600 leading-relaxed"
+          className="mt-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -53,7 +53,7 @@ export default function Profile() {
           ].map((item, i) => (
             <motion.div
               key={i}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm"
               whileHover={{
                 y: -6,
                 scale: 1.03,
