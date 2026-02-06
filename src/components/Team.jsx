@@ -4,7 +4,10 @@ import { profiles } from "../data/Profiles.jsx";
 
 export default function Team() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-12 font-press">
+    <section
+      id="members"
+      className="max-w-6xl mx-auto px-4 py-16 font-press"
+    >
       <h2 className="text-2xl font-bold text-center mb-10">Our Member</h2>
 
       <div
