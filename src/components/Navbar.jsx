@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -28,14 +29,24 @@ export default function Navbar() {
 
         <ul className="flex gap-8 font-medium">
           <li>
-            <a href="#home" className="hover:text-blue-500">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `hover:text-blue-500 ${isActive ? "text-blue-600" : ""}`
+              }
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#about" className="hover:text-blue-500">
+            <NavLink
+              to="/profile"
+              className={({ isActive }) =>
+                `hover:text-blue-500 ${isActive ? "text-blue-600" : ""}`
+              }
+            >
               Profile
-            </a>
+            </NavLink>
           </li>
           {/* <li>
             <a href="#gallery" className="hover:text-blue-500">
