@@ -23,7 +23,7 @@ export default function Profile() {
           whileHover={{ x: 6 }}
           transition={{ type: "spring", stiffness: 200 }}
         >
-          Profile Group
+          Thank You Kak!!!🤗💙
         </motion.h1>
 
         {/* DESCRIPTION */}
