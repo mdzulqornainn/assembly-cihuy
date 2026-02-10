@@ -73,8 +73,11 @@ export default function Hero() {
           className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center"
           variants={itemVariants}
         >
-          ASSEMBLY GROUP
+          ASSEMBLY CIHUY
         </motion.h1>
+        <p className="text-sm sm:text-base md:text-lg text-center max-w-xl mb-6">
+          yang bikin mo tidur dulu ges hehe
+        </p>
 
         {/* Buttons */}
         <motion.div
