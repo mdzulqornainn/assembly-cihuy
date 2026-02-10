@@ -16,7 +16,7 @@ export default function Profile() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          ; Assembly
+          Assembly
         </motion.p>
 
         {/* TITLE */}
@@ -47,7 +47,7 @@ export default function Profile() {
         </motion.p>
 
         {/* CARDS */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <motion.div className="mt-8 grid gap-4 sm:grid-cols-2">
           {[
             {
               title: "Kak Eggball",
@@ -62,13 +62,11 @@ export default function Profile() {
               key={i}
               className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm"
               whileHover={{
-                y: -6,
                 scale: 1.03,
+                y: -6,
               }}
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 20,
+              whileTap={{
+                scale: 0.95,
               }}
             >
               <h2 className="text-lg font-semibold text-slate-900">
@@ -81,7 +79,7 @@ export default function Profile() {
               />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       <Team />

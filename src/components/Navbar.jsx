@@ -14,12 +14,12 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 bg-white/90"
+          className="md:hidden inline-flex items-center justify-center w-10 h-10"
           aria-label="Toggle navigation"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span className="text-lg leading-none">{menuOpen ? "✕" : "☰"}</span>
+          <span className="text-2xl leading-none">{menuOpen ? "✕" : "☰"}</span>
         </button>
 
         <ul className="hidden md:flex gap-8 font-medium">
@@ -54,7 +54,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-slate-200 bg-white/95">
+        <div className="md:hidden">
           <ul className="px-4 py-4 flex flex-col gap-4 font-medium">
             <li>
               <NavLink
