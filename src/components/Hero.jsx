@@ -20,8 +20,22 @@ export default function Hero() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const playMusic = () => {
+    const audio = document.querySelector("audio");
+    if (!audio) return;
+
+    if (audio.paused) {
+      audio.muted = false;
+      audio.volume = 0.5;
+      audio.play().catch(() => {});
+    }
+  };
+
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-linear-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press px-4 sm:px-6">
+    <section
+      className="relative min-h-[100svh] overflow-hidden bg-linear-to-b from-blue-400 to-indigo-600 flex flex-col justify-center items-center text-white font-press px-4 sm:px-6"
+      onClick={playMusic}
+    >
       {/* Dirt background floating subtle */}
       <motion.img
         src={dirt}
