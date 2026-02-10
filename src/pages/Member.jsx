@@ -14,7 +14,7 @@ export default function Profile() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Assembly
+          ; Assembly
         </motion.p>
 
         {/* TITLE */}
@@ -33,10 +33,9 @@ export default function Profile() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolor
-          provident vel rerum ipsum veritatis molestias libero illo eos
-          aspernatur, laborum porro laboriosam ipsam, illum saepe nisi neque aut
-          quos.
+          Assembly is a community of passionate individuals who come together to
+          share ideas, collaborate on projects, and support each other in their
+          personal and professional growth.
         </motion.p>
 
         {/* CARDS */}

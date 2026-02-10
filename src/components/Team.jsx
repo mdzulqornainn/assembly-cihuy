@@ -31,7 +31,7 @@ export default function Team() {
 
       {/* GRID */}
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-8"
+        className="grid grid-cols-2 justify-center   sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 sm:gap-8"
         variants={container}
         initial="hidden"
         whileInView="visible"
