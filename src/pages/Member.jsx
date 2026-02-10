@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Team from "../components/Team";
 import Navbar from "../components/Navbar";
+import ikbal from "../assets/profile/8.jpg";
+import rose from "../assets/profile/12.jpg";
 
 export default function Profile() {
   return (
@@ -28,26 +30,32 @@ export default function Profile() {
 
         {/* DESCRIPTION */}
         <motion.p
-          className="mt-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed"
+          className="mt-4 text-xs sm:text-xs md:text-sm text-slate-600 leading-7"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          Assembly is a community of passionate individuals who come together to
-          share ideas, collaborate on projects, and support each other in their
-          personal and professional growth.
+          Kami dari
+          <span className="font-bold text-blue-400"> Assembly </span>
+          mengucapkan terima kasih banyak untuk Kak Eggball dan Kak Rose atas
+          arahan, waktu, dan kesabarannya selama ospek. Banyak pelajaran dan
+          pengalaman berharga yang kami dapatkan. Semoga kakak-kakak selalu
+          sukses ke depannya. Terima kasih! 🙌✨
+          <br />
+          <br />
+          <span className="italic text-xs opacity-65">from Assembly(GPT)</span>
         </motion.p>
 
         {/* CARDS */}
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {[
             {
-              title: "Hehe",
-              text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolor provident vel rerum ipsum .",
+              title: "Kak Eggball",
+              profile: ikbal,
             },
             {
-              title: "Hehe",
-              text: " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolor provident vel.",
+              title: "Kak Rose",
+              profile: rose,
             },
           ].map((item, i) => (
             <motion.div
@@ -66,7 +74,11 @@ export default function Profile() {
               <h2 className="text-lg font-semibold text-slate-900">
                 {item.title}
               </h2>
-              <p className="mt-2 text-sm text-slate-600">{item.text}</p>
+              <img
+                src={item.profile}
+                alt={item.title}
+                className="mt-3 w-full h-48 object-cover rounded-lg"
+              />
             </motion.div>
           ))}
         </div>
