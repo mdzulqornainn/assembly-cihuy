@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import Team from "../components/Team";
-import Navbar from "../components/Navbar";
+
 import ikbal from "../assets/profile/8.jpg";
 import rose from "../assets/profile/12.jpg";
 
 export default function Profile() {
   return (
     <section className="min-h-screen bg-slate-50 pt-20 sm:pt-24 pb-12 sm:pb-16">
-      <Navbar />
-
       <div className="max-w-4xl mx-auto px-4 sm:px-6 font-press">
         {/* LABEL */}
         <motion.p

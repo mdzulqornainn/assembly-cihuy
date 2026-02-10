@@ -1,18 +1,32 @@
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-export default function Button({ href, text, icon, target }) {
-  const rel = target === "_blank" ? "noreferrer" : undefined;
+export default function Button({ href, text, icon, target, className = "" }) {
+  const baseStyle =
+    "inline-flex items-center gap-2 px-5 py-2.5 rounded-full " +
+    "bg-white/20 backdrop-blur-md border border-white/30 " +
+    "text-white text-sm font-semibold " +
+    "hover:bg-white/30 transition-all duration-300";
+
+  // 🔹 External link (Spotify, dll)
+  if (href.startsWith("http")) {
+    return (
+      <a
+        href={href}
+        target={target}
+        rel="noopener noreferrer"
+        className={`${baseStyle} ${className}`}
+      >
+        {icon && <img src={icon} alt="" className="w-4 h-4" />}
+        {text}
+      </a>
+    );
+  }
+
+  // 🔹 Internal route (React Router) → TIDAK reload
   return (
-    <motion.a
-      href={href}
-      target={target}
-      rel={rel}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="relative z-50 inline-flex items-center justify-center gap-2 h-11 sm:h-12 px-4 sm:px-6 rounded-3xl border-[3px] border-amber-400 text-white text-sm sm:text-base font-semibold hover:bg-white hover:text-amber-700 transition mb-1"
-    >
-      {icon && <img src={icon} className="w-9 h-9 shrink-0 mx-1" />}
-      {text && <span>{text}</span>}
-    </motion.a>
+    <Link to={href} className={`${baseStyle} ${className}`}>
+      {icon && <img src={icon} alt="" className="w-4 h-4" />}
+      {text}
+    </Link>
   );
 }
