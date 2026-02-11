@@ -71,7 +71,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs opacity-60">
-          © {new Date().getFullYear()} Assembly CIHuy
+          © {new Date().getFullYear()} Assembly Cihuy
         </p>
       </motion.div>
     </footer>
