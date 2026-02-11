@@ -22,7 +22,7 @@ export default function Gallery() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mb-24 max-w-4xl mx-auto font-press"
+          className="mb-10 max-w-4xl mx-auto font-press"
         >
           {/* ===== MOBILE VERSION ===== */}
           <div className="sm:hidden text-center">
