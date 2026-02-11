@@ -7,7 +7,7 @@ const MotionHeart = motion(Heart);
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-4 mt-12">
+    <footer className="bg-black text-white py-4 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
