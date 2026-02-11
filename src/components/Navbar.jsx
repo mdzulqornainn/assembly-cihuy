@@ -6,11 +6,18 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`font-press fixed top-0 left-0 w-full z-50 transition-all duration-300
+      className={`font-press text-sm fixed top-0 left-0 w-full z-50 transition-all duration-300
         bg-white/80 backdrop-blur shadow`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-        <h1 className="font-bold text-xl">Assembly</h1>
+        <div className="flex items-center gap-3">
+          <img
+            src="/src/assets/profile.jpg"
+            alt="Assembly Logo"
+            className="w-10 h-10 rounded-full object-cover"
+          />
+          <h2 className="font-bold text-xl">Assembly</h2>
+        </div>
 
         <button
           type="button"
@@ -22,7 +29,7 @@ export default function Navbar() {
           <span className="text-2xl leading-none">{menuOpen ? "✕" : "☰"}</span>
         </button>
 
-        <ul className="hidden md:flex gap-8 font-medium">
+        <ul className="hidden md:flex gap-5 font-medium">
           <li>
             <NavLink
               to="/"
@@ -33,6 +40,7 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
+
           <li>
             <NavLink
               to="/member"
@@ -45,9 +53,14 @@ export default function Navbar() {
           </li>
           {
             <li>
-              <a href="#gallery" className="hover:text-blue-500">
+              <NavLink
+                to="/gallery"
+                className={({ isActive }) =>
+                  `hover:text-blue-500 text-base ${isActive ? "text-blue-600" : ""}`
+                }
+              >
                 Gallery
-              </a>{" "}
+              </NavLink>
             </li>
           }
         </ul>
@@ -76,6 +89,17 @@ export default function Navbar() {
                 }
               >
                 Profile
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/gallery"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) =>
+                  `hover:text-blue-500 text-sm ${isActive ? "text-blue-600" : ""}`
+                }
+              >
+                Gallery
               </NavLink>
             </li>
           </ul>

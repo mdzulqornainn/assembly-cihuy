@@ -8,15 +8,6 @@ export default function Profile() {
   return (
     <section className="min-h-screen bg-slate-50 pt-20 sm:pt-24 pb-12 sm:pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 font-press">
-        {/* LABEL */}
-        <motion.p
-          className="text-xs sm:text-sm uppercase tracking-[0.25em] sm:tracking-[0.3em] text-slate-500"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          Assembly
-        </motion.p>
-
         {/* TITLE */}
         <motion.h1
           className="mt-3 text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900"
@@ -38,7 +29,8 @@ export default function Profile() {
           mengucapkan terima kasih banyak untuk Kak Eggball dan Kak Rose atas
           arahan, waktu, dan kesabarannya selama ospek. Banyak pelajaran dan
           pengalaman berharga yang kami dapatkan. Semoga kakak-kakak selalu
-          sukses ke depannya. Terima kasih! 🙌✨
+          sukses ke depannya. Terima kasih!{" "}
+          <span className="text-xl">🙌✨</span>
           <br />
           <br />
           <span className="italic text-xs opacity-65">from Assembly(GPT)</span>

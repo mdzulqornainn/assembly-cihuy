@@ -12,7 +12,9 @@ function App() {
     <>
       <GlobalMusic /> {/* 🔊 selalu hidup */}
       {/* 🧭 Navbar hanya di /member */}
-      {location.pathname === "/member" && <Navbar />}
+      {location.pathname === "/member" || location.pathname === "/gallery" ? (
+        <Navbar />
+      ) : null}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/member" element={<Member />} />

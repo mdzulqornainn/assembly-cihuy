@@ -12,7 +12,7 @@ export default function Button({ href, text, icon, target }) {
     whileTap: { scale: 0.95 },
   };
 
-  // 🔗 external link
+  //  external link
   if (href.startsWith("http")) {
     return (
       <motion.a
@@ -27,7 +27,7 @@ export default function Button({ href, text, icon, target }) {
     );
   }
 
-  // 🔀 internal route (React Router)
+  //  internal route (React Router)
   return (
     <motion.div {...motionProps}>
       <Link to={href} className={baseClass}>
