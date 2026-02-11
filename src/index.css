@@ -4,3 +4,16 @@
 .font-press {
   font-family: "Press Start 2P", cursive;
 }
+
+@keyframes spinInfinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-infinite {
+  animation: spinInfinite 8s linear infinite;
+}

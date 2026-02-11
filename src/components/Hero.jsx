@@ -75,8 +75,11 @@ export default function Hero() {
         >
           ASSEMBLY CIHUY
         </motion.h1>
-        <p className="text-sm sm:text-base md:text-lg text-center max-w-xl mb-6">
-          yang bikin mo tidur dulu ges hehe
+        <p
+          className="text-sm sm:text-base md:text-lg  opacity-80
+          text-center max-w-xl mb-6"
+        >
+          Halo kak Ikbal & Kak Rose!
         </p>
 
         {/* Buttons */}

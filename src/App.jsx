@@ -4,14 +4,15 @@ import Member from "./pages/Member.jsx";
 import Gallery from "./components/Gallery.jsx";
 import GlobalMusic from "./components/GlobalMusic.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const location = useLocation();
 
   return (
     <>
-      <GlobalMusic /> {/* 🔊 selalu hidup */}
-      {/* 🧭 Navbar hanya di /member */}
+      <GlobalMusic /> {/* Music selalu hidup */}
+      {/* Navbar hanya di /member */}
       {location.pathname === "/member" || location.pathname === "/gallery" ? (
         <Navbar />
       ) : null}
@@ -20,6 +21,9 @@ function App() {
         <Route path="/member" element={<Member />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
+      {location.pathname === "/member" || location.pathname === "/gallery" ? (
+        <Footer />
+      ) : null}
     </>
   );
 }
