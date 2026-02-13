@@ -26,7 +26,7 @@ export default function Team() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Our Member
+        Our Members ✨🎈
       </motion.h2>
 
       {/* GRID */}

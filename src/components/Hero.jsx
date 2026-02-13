@@ -88,7 +88,7 @@ export default function Hero() {
           className="flex gap-3 md:gap-4 mt-2 flex-wrap justify-center"
         >
           <Button href="/gallery" text="Gallery" icon={camera} />
-          <Button href="/member" text="Members" />
+          <Button href="/member" text="👨‍💻 Members" />
           <Button
             href="https://open.spotify.com/playlist/7BBQ3REvQUrRb9LFuCXSQN?si=efd4f8318fca4348"
             text="Playlist"

@@ -8,7 +8,6 @@ export default function ProfileCard({ name, img }) {
   return (
     <motion.div
       className="flex flex-col items-center gap-3 cursor-pointer"
-      // ✨ FEEL BUTTON
       whileHover={{
         scale: 1.08,
         y: -6,

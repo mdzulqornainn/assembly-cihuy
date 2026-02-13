@@ -19,21 +19,24 @@ export default function Profile() {
 
         {/* DESCRIPTION */}
         <motion.p
-          className="mt-4 text-xs sm:text-xs md:text-sm text-slate-600 leading-7"
+          className="mt-4 text-justify text-xs sm:text-xs md:text-sm text-slate-600 leading-7"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
           Kami dari
-          <span className="font-bold text-blue-400"> Assembly </span>
+          <span className="font-bold text-blue-400 "> Assembly </span>
           mengucapkan terima kasih banyak untuk Kak Eggball dan Kak Rose atas
           arahan, waktu, dan kesabarannya selama ospek. Banyak pelajaran dan
           pengalaman berharga yang kami dapatkan. Semoga kakak-kakak selalu
-          sukses ke depannya. Terima kasih!{" "}
-          <span className="text-xl">🙌✨</span>
+          sukses ke depannya.
+          <br />
+          Terima kasih! <span className="text-xl">🙌✨</span>
           <br />
           <br />
-          <span className="italic text-xs opacity-65">from Assembly(GPT)</span>
+          <span className="italic text-xs opacity-65">
+            from Assembly <span className="font-bold">(GPT)</span>{" "}
+          </span>
         </motion.p>
 
         {/* CARDS */}

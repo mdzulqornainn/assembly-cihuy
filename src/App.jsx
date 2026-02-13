@@ -18,7 +18,6 @@ function App() {
     <>
       <GlobalMusic />
 
-      {/* 🎮 Pixel Game Loader */}
       <AnimatePresence mode="wait">
         {loading && <Loader onFinish={() => setLoading(false)} />}
       </AnimatePresence>
@@ -26,6 +25,8 @@ function App() {
       {!loading && (
         <>
           {(location.pathname === "/member" ||
+            location.pathname === "/member/" ||
+            location.pathname === "/gallery|" ||
             location.pathname === "/gallery") && <Navbar />}
 
           <Routes location={location} key={location.pathname}>
@@ -35,6 +36,8 @@ function App() {
           </Routes>
 
           {(location.pathname === "/member" ||
+            location.pathname === "/member/" ||
+            location.pathname === "/gallery|" ||
             location.pathname === "/gallery") && <Footer />}
         </>
       )}

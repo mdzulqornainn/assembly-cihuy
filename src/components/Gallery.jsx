@@ -50,7 +50,7 @@ export default function Gallery() {
       <div className="max-w-6xl mx-auto px-6">
         {/* ================= HEADER TETAP ================= */}
         <div className="mb-20 text-center font-press">
-          <h2 className="text-4xl tracking-[0.3em] text-black">OUR MOMENT</h2>
+          <h2 className="text-4xl tracking-[0.3em] text-black">OUR MOMENTS</h2>
         </div>
 
         {/* ================= CINEMATIC MASONRY ================= */}
