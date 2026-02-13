@@ -60,6 +60,7 @@ export default function Footer() {
             alt="Vite"
             className="w-6 h-6 cursor-pointer"
             whileHover={{ scale: 1.15, rotate: 12 }}
+            whileTap={{ scale: 1.15, rotate: 12 }}
             transition={{
               type: "spring",
               stiffness: 300,
