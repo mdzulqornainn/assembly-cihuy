@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Team from "../components/Team";
 
-import ikbal from "../assets/profile/8.jpg";
-import rose from "../assets/profile/12.jpg";
+import ikbal from "../assets/profile/ikbal.jpg";
+import rose from "../assets/profile/rose.jpg";
 
 export default function Profile() {
   return (
