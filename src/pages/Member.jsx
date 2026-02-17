@@ -19,7 +19,7 @@ export default function Profile() {
 
         {/* DESCRIPTION */}
         <motion.p
-          className="mt-4 text-xs sm:text-xs md:text-sm text-slate-600 leading-7"
+          className="mt-4 text-xs text-left sm:text-justify  sm:text-xs md:text-sm text-slate-600 leading-7"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
