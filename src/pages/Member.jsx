@@ -43,11 +43,11 @@ export default function Profile() {
         <motion.div className="mt-8 grid gap-4 sm:grid-cols-2">
           {[
             {
-              title: "Kak Eggball",
+              title: "Kak Eggball 🥚⚽",
               profile: ikbal,
             },
             {
-              title: "Kak Rose",
+              title: "Kak Rose 🌹",
               profile: rose,
             },
           ].map((item, i) => (
