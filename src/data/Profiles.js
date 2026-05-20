@@ -1,4 +1,4 @@
-// data/profiles.js
+// ambil foto foto kalian untuk member disini!! maskkan di asssets
 import profile1 from "../assets/profile/1.jpg";
 import profile2 from "../assets/profile/2.jpg";
 import profile3 from "../assets/profile/3.jpg";

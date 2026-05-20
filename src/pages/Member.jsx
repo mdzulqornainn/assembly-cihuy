@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Team from "../components/Team";
 
+// import gambar kasuh kalian disini!!
 import ikbal from "../assets/profile/ikbal.jpg";
 import rose from "../assets/profile/rose.jpg";
 
@@ -39,7 +40,7 @@ export default function Profile() {
           </span>
         </motion.p>
 
-        {/* CARDS */}
+        {/* Ganti Nama Kasuh disini!!! */}
         <motion.div className="mt-8 grid gap-4 sm:grid-cols-2">
           {[
             {
