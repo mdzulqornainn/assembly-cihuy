@@ -14,6 +14,15 @@ import gallery13 from "../assets/gallery/13.webp";
 import gallery14 from "../assets/gallery/14.webp";
 import gallery15 from "../assets/gallery/15.webp";
 import gallery16 from "../assets/gallery/16.webp";
+import gallery17 from "../assets/gallery/17.webp";
+import gallery18 from "../assets/gallery/18.webp";
+import gallery19 from "../assets/gallery/19.webp";
+import gallery20 from "../assets/gallery/20.webp";
+import gallery21 from "../assets/gallery/21.webp";
+import gallery22 from "../assets/gallery/22.webp";
+import gallery23 from "../assets/gallery/23.webp";
+import gallery24 from "../assets/gallery/24.webp";
+import gallery25 from "../assets/gallery/25.webp";
 
 export const galleryItems = [
   { id: 1, img: gallery1, alt: "Moment 1" },

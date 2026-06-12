@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Team from "../components/Team";
 
 // import gambar kasuh kalian disini!!
-import ikbal from "../assets/profile/ikbal.jpg";
-import rose from "../assets/profile/rose.jpg";
+import ikbal from "../assets/profile/ikbal.webp";
+import rose from "../assets/profile/rose.webp";
 
 export default function Profile() {
   return (
