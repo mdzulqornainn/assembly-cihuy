@@ -34,7 +34,7 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/mdzulqornainn"
           >
-            DzenMori / Nain
+            DzenMori
           </a>
         </p>
 

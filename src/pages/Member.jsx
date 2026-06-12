@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import Team from "../components/Team";
 
-import ikbal from "../assets/profile/8.jpg";
-import rose from "../assets/profile/12.jpg";
+// import gambar kasuh kalian disini!!
+import ikbal from "../assets/profile/ikbal.jpg";
+import rose from "../assets/profile/rose.jpg";
 
 export default function Profile() {
   return (
@@ -19,7 +20,7 @@ export default function Profile() {
 
         {/* DESCRIPTION */}
         <motion.p
-          className="mt-4 text-justify text-xs sm:text-xs md:text-sm text-slate-600 leading-7"
+          className="mt-4 text-xs text-left sm:text-justify  sm:text-xs md:text-sm text-slate-600 leading-7"
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -39,15 +40,15 @@ export default function Profile() {
           </span>
         </motion.p>
 
-        {/* CARDS */}
+        {/* Ganti Nama Kasuh disini!!! */}
         <motion.div className="mt-8 grid gap-4 sm:grid-cols-2">
           {[
             {
-              title: "Kak Eggball",
+              title: "Kak Eggball 🥚⚽",
               profile: ikbal,
             },
             {
-              title: "Kak Rose",
+              title: "Kak Rose 🌹",
               profile: rose,
             },
           ].map((item, i) => (

@@ -32,4 +32,13 @@ export const galleryItems = [
   { id: 14, img: gallery14, alt: "Moment 14" },
   { id: 15, img: gallery15, alt: "Moment 15" },
   { id: 16, img: gallery16, alt: "Moment 16" },
+  { id: 17, img: gallery17, alt: "Moment 17" },
+  { id: 18, img: gallery18, alt: "Moment 18" },
+  { id: 19, img: gallery19, alt: "Moment 19" },
+  { id: 20, img: gallery20, alt: "Moment 20" },
+  { id: 21, img: gallery21, alt: "Moment 21" },
+  { id: 22, img: gallery22, alt: "Moment 22" },
+  { id: 23, img: gallery23, alt: "Moment 23" },
+  { id: 24, img: gallery24, alt: "Moment 24" },
+  { id: 25, img: gallery25, alt: "Moment 25" },
 ];
