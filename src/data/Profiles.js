@@ -1,23 +1,23 @@
 // data/profiles.js
-import profile1 from "../assets/profile/1.jpg";
-import profile2 from "../assets/profile/2.jpg";
-import profile3 from "../assets/profile/3.jpg";
-import profile4 from "../assets/profile/4.jpg";
-import profile5 from "../assets/profile/5.jpg";
-import profile6 from "../assets/profile/6.jpg";
-import profile7 from "../assets/profile/7.jpg";
-import profile8 from "../assets/profile/8.jpg";
-import profile9 from "../assets/profile/9.jpg";
-import profile10 from "../assets/profile/10.jpg";
-import profile11 from "../assets/profile/11.jpg";
-import profile12 from "../assets/profile/12.jpg";
-import profile13 from "../assets/profile/13.jpg";
-import profile14 from "../assets/profile/14.jpg";
-import profile15 from "../assets/profile/15.jpg";
-import profile16 from "../assets/profile/16.jpg";
-import profile17 from "../assets/profile/17.jpg";
-import profile18 from "../assets/profile/18.jpg";
-import profile19 from "../assets/profile/19.jpg";
+import profile1 from "../assets/profile/1.webp";
+import profile2 from "../assets/profile/2.webp";
+import profile3 from "../assets/profile/3.webp";
+import profile4 from "../assets/profile/4.webp";
+import profile5 from "../assets/profile/5.webp";
+import profile6 from "../assets/profile/6.webp";
+import profile7 from "../assets/profile/7.webp";
+import profile8 from "../assets/profile/8.webp";
+import profile9 from "../assets/profile/9.webp";
+import profile10 from "../assets/profile/10.webp";
+import profile11 from "../assets/profile/11.webp";
+import profile12 from "../assets/profile/12.webp";
+import profile13 from "../assets/profile/13.webp";
+import profile14 from "../assets/profile/14.webp";
+import profile15 from "../assets/profile/15.webp";
+import profile16 from "../assets/profile/16.webp";
+import profile17 from "../assets/profile/17.webp";
+import profile18 from "../assets/profile/18.webp";
+import profile19 from "../assets/profile/19.webp";
 
 export const profiles = [
   { id: 1, name: "Khisa", img: profile1 },
